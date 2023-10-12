@@ -178,6 +178,8 @@ const Z: Tetermino = {
 export const PIECES = [I, J, L, O, S, T, Z];
 const canvas = document.getElementById("tetris") as HTMLCanvasElement;
 export const ctx = canvas.getContext("2d") as CanvasRenderingContext2D;
+const nextPieceCanvas = document.getElementById("next-piece") as HTMLCanvasElement;
+export const nextPieceCtx = nextPieceCanvas.getContext("2d") as CanvasRenderingContext2D;
 export const scoreElement = document.getElementById("score") as HTMLParagraphElement;
 
 export const ROW = 20;
